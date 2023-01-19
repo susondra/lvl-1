@@ -1,22 +1,18 @@
 input.onButtonPressed(Button.A, function () {
-    y += 1
+    led.plot(x, y)
     x += 1
-    led.plot(0, 0)
+})
+input.onGesture(Gesture.ScreenUp, function () {
+	
 })
 input.onButtonPressed(Button.B, function () {
-	
+    x = 0
+    y += -1
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-})
-let x = 0
-let y = 0
-basic.forever(function () {
 	
 })
+let y = 0
+let x = 0
+x = 0
+y = 4
