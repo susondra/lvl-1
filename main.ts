@@ -1,6 +1,5 @@
 input.onButtonPressed(Button.A, function () {
     led.plot(x, y)
-    x += 1
 })
 input.onButtonPressed(Button.B, function () {
     x += 1
